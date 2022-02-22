@@ -1,0 +1,9 @@
+tp, fp, fn, tn = [int(x) for x in input().split()]
+accur = (tp + tn) / (tp + fp + fn + tn)
+precis = tp / (tp + fp)
+recall = tp / (tp + fn)
+f1 = 2 * (precis * recall) / (precis + recall)
+print(round(accur, 4))
+print(round(precis, 4)) 
+print(round(recall, 4))
+print(round(f1, 4))
